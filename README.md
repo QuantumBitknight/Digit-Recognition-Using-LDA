@@ -1,2 +1,5 @@
 # Digit-Recognition-Using-LDA
 Handwritten Digit Recognition Using Linear Discriminant Analysis and Random Forest Classifier on Scikit-learn Digits Dataset"
+
+The handwritten digit dataset with 1797 instances and 64 pixel features (8x8 images) was loaded. The feature data was converted into a Pandas DataFrame. Features were standardized using StandardScaler. The target variable contained digit labels (0 to 9).
+Linear Discriminant Analysis (LDA) reduced the dimensionality to 9 components by fitting on the scaled features and target labels. The transformed LDA data was used as input.The dataset was split into train and test sets (70% test size, random state 46). A Random Forest Classifier was trained on the LDA-transformed training set and predicted on test data.Accuracy of the model on the test set was approximately 95.31%, indicating strong classification performance for handwritten digit recognition.This pipeline involves data scaling, dimensionality reduction by LDA, train-test splitting, Random Forest modeling, and evaluation by accuracy score. It effectively classifies digits using transformed features with good accuracy.
